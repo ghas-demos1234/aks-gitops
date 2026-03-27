@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: demo-web
+  namespace: defualt
   labels:
     app: demo-web
 spec:
@@ -24,6 +25,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: demo-web-lb
+  namespace: defualt
   labels:
     app: demo-web
 spec:
